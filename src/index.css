@@ -8,8 +8,31 @@
     margin: 4rem;
     padding: 2rem;
 
-    background-color: #4F5261;   
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(68,68,78,1) 82%, rgba(118,118,118,1) 100%);
     border-radius: 40px;
+}
+
+.imagen {
+    
+    display: block;
+    
+    
+    position: absolute;
+
+   
+}
+
+.imagen img {
+
+    border-radius: 20px;
+
+    margin: auto;
+    margin-top: 0.5rem;
+    
+    width: 96%;
+
+    filter: brightness(30%);
 }
 
 .contenido {
@@ -31,13 +54,35 @@
 
 .centro {
     border-radius: 20px;
-    border: 2px solid gold;
+    border: 2px solid rgb(159, 145, 62);
     margin: 1rem;
-    height: 480px;
-    background-color: #E6E8B1;
+    
+    height: 30rem;
+    background-color: #d9dd6f;
 
-    animation: transicion;
+    position: relative;
 
+}
+
+
+
+.centro h1 {
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    position: relative;
+    color: white;
+
+}
+
+.lateral h1 {
+    padding-top: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    position: relative;
 }
 
 .lateral {
@@ -47,6 +92,7 @@
     margin: 1rem;
     height: 350px;
     background-color: #EAEAE0;
+    position: relative;
 }
 
 .boton {
@@ -57,4 +103,89 @@
 }
 .escondido {
     opacity: 0;
+}
+
+.app {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    text-align: left;
+
+
+    margin: 0 2rem;
+
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    position: relative;
+
+}
+
+
+
+.app span, .app_lateral span {
+    font-weight: 700;
+    position: relative;
+}
+
+
+.enlaces {
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.enlaces a{
+    text-decoration: unset;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+.enlaces a:hover, .enlaces_lateral a:hover {
+    cursor: pointer;
+    color: #A9AD30;
+    transition: 0.3s;
+}
+
+.app_lateral {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 1rem 1rem;
+
+    height: 13rem;
+
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    position: relative;
+
+}
+
+.enlaces_lateral {
+
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;  
+    
+    position: relative;
+
+}
+
+.enlaces_lateral a{
+    text-decoration: unset;
+    font-size: 0.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: 700;
+
+    position: relative;
 }

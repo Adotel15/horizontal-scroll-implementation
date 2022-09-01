@@ -72,7 +72,7 @@ const Scroll = ({ array, longitud }) => {
                     
                     <CenterCard carta = {centro} />
 
-                    {middle !== longitud ? <LateralCard carta = {posterior} /> : null} 
+                    {middle !== longitud ? <LateralCard carta = {posterior} /> : <div />} 
                 </div> 
 
                 <button
