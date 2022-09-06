@@ -13,7 +13,7 @@ const CenterCard = ({ carta }) => {
                 </div>
                 
 
-                <div>
+                <div className = "raton">
                     <h1> { carta.nombre } </h1>
                     <div className = "app">
                         <p> { carta.texto } </p>

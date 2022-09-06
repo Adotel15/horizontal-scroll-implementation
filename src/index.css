@@ -3,14 +3,63 @@
 
     
 }
+
+.prueba {
+    margin: 2rem 10rem;
+    height: 25rem;
+    width: 60vw;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.main1{
+    background-color: green;
+    width: 60vw;
+    height: 100%;
+}
+
+.main2{
+    background-color: blue;
+    width: 60vw;
+    height: 100%;
+}
+
+.main3{
+    background-color: red;
+    width: 60vw;
+    height: 100%;
+}
+
+.main4{
+    background-color: yellow;
+    width: 60vw;
+    height: 100vw;
+}
+
+.main5{
+    background-color: aqua;
+    width: 60vw;
+    height: 100vw;
+
+}
+
+.main6{
+    background-color: purple;
+    width: 100vw;
+    height: 100vw;
+
+}
+
 .contenedor {
 
     margin: 4rem;
     padding: 2rem;
 
+    
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(68,68,78,1) 82%, rgba(118,118,118,1) 100%);
     border-radius: 40px;
+    
 }
 
 .imagen {
@@ -20,6 +69,8 @@
     
     position: absolute;
 
+    align-items: center;
+
    
 }
 
@@ -27,12 +78,11 @@
 
     border-radius: 20px;
 
-    margin: auto;
-    margin-top: 0.5rem;
     
-    width: 96%;
+    
 
     filter: brightness(30%);
+    
 }
 
 .contenido {
@@ -54,13 +104,15 @@
 
 .centro {
     border-radius: 20px;
-    border: 2px solid rgb(159, 145, 62);
+    border: 3px solid white;
     margin: 1rem;
     
     height: 30rem;
-    background-color: #d9dd6f;
+    background-color: #0F3C52;
 
     position: relative;
+
+    color: #ECEA3E;
 
 }
 
@@ -73,7 +125,7 @@
     font-weight: 800;
     font-size: 2rem;
     position: relative;
-    color: white;
+    color: #ECEA3E;
 
 }
 
@@ -88,19 +140,28 @@
 .lateral {
 
     border-radius: 20px;
-    border: 2px solid white;
+    border: 3px solid #2C91C1;
     margin: 1rem;
     height: 350px;
     background-color: #EAEAE0;
     position: relative;
 }
 
+
 .boton {
     border-radius: 10px;
     padding: 4px 1rem;
-    background-color: yellow;
-    border: solid gold 1px;
+    background-color: #2C91C1;
+    border: solid white 2px;
+    color: white;
 }
+
+.boton:hover{
+    cursor: pointer;
+    background-color: #2FBDFF;
+
+}
+
 .escondido {
     opacity: 0;
 }
@@ -142,13 +203,13 @@
     text-decoration: unset;
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    color: white;
     font-weight: 700;
 }
 
 .enlaces a:hover, .enlaces_lateral a:hover {
     cursor: pointer;
-    color: #A9AD30;
+    color: #FFFC00;
     transition: 0.3s;
 }
 
@@ -159,8 +220,9 @@
     justify-content: space-between;
 
     margin: 1rem 1rem;
+    padding-top: 3rem;
 
-    height: 13rem;
+    height: 10rem;
 
     font-size: 0.8rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

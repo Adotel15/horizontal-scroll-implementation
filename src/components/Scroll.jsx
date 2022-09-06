@@ -6,13 +6,13 @@ import CenterCard from "./CenterCard";
 
 const Scroll = ({ array, longitud }) => {
 
-    const[middle, setMiddle] = useState(Math.round(longitud / 2))
-
-    const [izquierdo, setIzquierdo] = useState(true)
-    const [derecho, setDerecho] = useState(true)
-    const [previo, setPrevio] = useState(array[middle - 1])
-    const [centro, setCentro] = useState(array[middle])
-    const [posterior, setPosterior] = useState(array[middle + 1])
+    const [ middle, setMiddle ] = useState(Math.round(longitud / 2))
+    const [ izquierdo, setIzquierdo ] = useState(true)
+    const [ derecho, setDerecho ] = useState(true)
+    
+    const [ previo, setPrevio ] = useState(array[middle - 1])
+    const [ centro, setCentro ] = useState(array[middle])
+    const [ posterior, setPosterior ] = useState(array[middle + 1])
 
     useEffect(() => {
 
