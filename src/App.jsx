@@ -8,30 +8,34 @@ function App() {
 
   
     return (
-      <div>
-        <Scroll
-          array = {PAGES}
-          longitud = {PAGES.length - 1}
-        />
+      <>
 
-        <div className = "prueba">
-          <HorizontalScroll
-            reverseScroll = { true }
-            config        = {{ stiffness: 80, damping: 10}}
-          >
-            {
-              PAGES.map ( page => (
+       { /*<div>
+          <Scroll
+            array = {PAGES}
+            longitud = {PAGES.length - 1}
+          />
+        </div> */ }
+        
+        <div className = "scroll">
+          <div className = "slider">
+            <HorizontalScroll
+              reverseScroll = { true }
+              config        = {{ stiffness: 80, damping: 10}}
+            >
+              {
+                PAGES.map ( page => (
 
-                  <Tarjeta 
-                    key = { page.id }
-                    page = {page}
-                  />
-              ))
-            }
-          </HorizontalScroll>
+                    <Tarjeta 
+                      key = { page.id }
+                      page = {page}
+                    />
+                ))
+              }
+            </HorizontalScroll>
+          </div>
         </div>
-
-      </div>
+      </>
     )
 }
 
